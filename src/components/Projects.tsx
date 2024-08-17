@@ -54,7 +54,6 @@ export default function Projects(){
               title={project.title}
               description={project.description}
               image={project.image}
-              tech={project.tech}
               linkCode={project.linkCode}
               linkWeb={project.linkWeb}
             />

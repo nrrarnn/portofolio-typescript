@@ -5,12 +5,11 @@ interface CardProjectProps {
   title: string;
   description: string;
   image: string;
-  tech: string;
   linkCode: string;
   linkWeb: string;
 }
 
-export default function CardProject({ title, description, image, tech, linkCode, linkWeb }: CardProjectProps){
+export default function CardProject({ title, description, image, linkCode, linkWeb }: CardProjectProps){
   return(
     <>
       <div className="w-full flex flex-wrap bg-slate-700 rounded-lg p-3 font-poppins">
