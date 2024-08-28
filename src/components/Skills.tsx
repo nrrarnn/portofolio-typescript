@@ -2,8 +2,8 @@ export default function Skills(){
   const logos: string[] = ['html-5', 'css', 'js', 'bootstrap', 'tailwindcss', 'react', 'node', 'typescript', 'python', 'php', 'laravel', 'mysql', 'figma', 'postman']
   return(
     <>
-      <div className="section section-2 pb-8">
-        <h1 className="font-bold text-3xl">Skills</h1>
+      <div className="section section-2 pt-10 pb-8">
+        <h1 className="font-bold text-3xl">💻Skills</h1>
         <div className="flex flex-wrap gap-4 ">
           {
             logos.map((el,index) => (

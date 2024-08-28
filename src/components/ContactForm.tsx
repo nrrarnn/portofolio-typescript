@@ -54,7 +54,7 @@ export default function ContactForm() {
             <textarea
               id="message"
               name="message"
-              rows="6"
+              rows={6}
               className="input-form shadow-sm shadow-slate-300"
               placeholder="Enter your message..."
               required

@@ -1,4 +1,7 @@
 import CardProject from "./CardProject";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 interface Project {
@@ -9,10 +12,44 @@ interface Project {
   linkWeb: string;
 }
 
+gsap.registerPlugin(ScrollTrigger);
 
-export default function Projects(){
+const Projects: React.FC = () => {
+
+  const cardRefs = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    cardRefs.current.forEach((card, index) => {
+      if (card) {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 20 }, // Mulai dengan opacity 0 dan sedikit terangkat
+          {
+            opacity: 1,
+            y: 0, // Kembali ke posisi semula
+            duration: 0.8,
+            delay: index * 0.2, // Tambahkan penundaan berdasarkan urutan
+            ease: "power1.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 80%", // Mulai animasi ketika bagian atas kartu mencapai 80% dari viewport
+              end: "bottom 30%", // Selesai animasi ketika bagian bawah kartu mencapai 30% dari viewport
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      }
+    });
+  }, []);
 
   const projects: Project[] = [
+    {
+      title: "WellEat",
+      description: 'WellEat is a healthy food recipe platform that helps users discover, save their favorite food recipes.',
+      image: 'welleat',
+      linkCode: 'https://git.enigmacamp.com/enigma-camp/enigmacamp-2.0/batch-29-reactjs/fatwa-panatagama/well-eat-website',
+      linkWeb: 'http://159.65.133.224/'
+    },
     {
       title: "Ryn's Recipes",
       description: 'Ryn Recipes is a project that displays recipe data, allowing users to view detailed information and filter recipes by category.',
@@ -49,17 +86,20 @@ export default function Projects(){
           <h1 className="font-bold text-2xl">Projects</h1>
           <div className="flex flex-wrap gap-3">
             {projects.map((project, index) => (
-            <CardProject
-              key={index}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              linkCode={project.linkCode}
-              linkWeb={project.linkWeb}
-            />
+            <div key={index} ref={(el) => (cardRefs.current[index] = el!)} >
+              <CardProject
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                linkCode={project.linkCode}
+                linkWeb={project.linkWeb}
+              />
+            </div>
           ))}
           </div>
       </div>
     </>
   )
 }
+
+export default Projects;
