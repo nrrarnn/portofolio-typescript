@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
   useEffect(() => {
     if (textRef.current && imgRef.current) {
     gsap.to(textRef.current, {
-      duration: 6,
+      duration: 3,
       text: {
         value: "Web Developer",
         delimiter: ""

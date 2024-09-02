@@ -44,6 +44,13 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      title: "Duriat-Food",
+      description: 'Duriat Food is a website that I developed for a catering business, designed to make it easier for customers to view various menus.',
+      image: 'duriat',
+      linkCode: 'https://github.com/nrrarnn/duriat-food',
+      linkWeb: 'https://duriat-food.netlify.app/'
+    },
+    {
       title: "WellEat",
       description: 'WellEat is a healthy food recipe platform that helps users discover, save their favorite food recipes.',
       image: 'welleat',
