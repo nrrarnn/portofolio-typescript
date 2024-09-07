@@ -12,30 +12,31 @@ const Navbar: React.FC = () => {
     gsap.fromTo(
         navbarRef.current,
         {
-          opacity: 0,  // Mulai dari opacity 0
-          y: -30,      // Mulai dari sedikit di atas posisinya
+          opacity: 0,  
+          y: -30,      
         },
         {
-          opacity: 1,  // Akhirnya menjadi opacity 1
-          y: 0,        // Akhirnya menjadi posisi normalnya
-          duration: 1, // Durasi animasi 1 detik
-          ease: "power2.out", // Efek easing yang lebih halus
+          opacity: 1,  
+          y: 0,       
+          duration: 1, 
+          ease: "power2.out", 
         }
       );
   }, []);
 
   return (
     <>
-      <header className="flex justify-center font-poppins z-[9999]"  ref={navbarRef}>
-        <nav className="fixed mt-3 top-0  py-5 bg-[#232946] text-white flex justify-center items-center shadow-lg z-50 max-w-[400px] w-full mx-auto rounded-full px-8 border border-slate-500">
-          <div className="flex gap-5 list-none font-normal text-md">
-            <Link to={'/'} className={isActive('/') ? "font-bold text-blue-500" : "hover:font-bold hover:text-blue-500"}>Home</Link>
-            <Link to={'/about'} className={isActive('/about') ? "font-bold text-blue-500" : "hover:font-bold hover:text-blue-500"}>About</Link>
-            <Link to={'/project'} className={isActive('/project') ? "font-bold text-blue-500" : "hover:font-bold hover:text-blue-500"}>Project</Link>
-            <Link to={'/contact'} className={isActive('/contact') ? "font-bold text-blue-500" : "hover:font-bold hover:text-blue-500"}>Contact</Link>
+      <header className="flex justify-center font-poppins z-[9999]" ref={navbarRef}>
+        <nav className="fixed mt-5 top-0 px-4 py-3 bg-slate-700/30 text-white flex justify-center items-center shadow-lg z-50 max-w-[350px] w-full rounded-full border border-slate-500">
+          <div className="flex gap-2 list-none font-normal text-sm">
+            <Link to={'/'} className={`px-3 py-1 rounded-full ${isActive('/') ? "active-border" : "hover-border"}`}>Home</Link>
+            <Link to={'/about'} className={`px-3 py-1 rounded-full ${isActive('/about') ? "active-border" : "hover-border"}`}>About</Link>
+            <Link to={'/project'} className={`px-3 py-1 rounded-full ${isActive('/project') ? "active-border" : "hover-border"}`}>Project</Link>
+            <Link to={'/contact'} className={`px-3 py-1 rounded-full ${isActive('/contact') ? "active-border" : "hover-border"}`}>Contact</Link>
           </div>
-          </nav>
+        </nav>
       </header>
+
     </>
   );
 }

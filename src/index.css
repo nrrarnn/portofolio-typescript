@@ -18,5 +18,13 @@
   .loader {
     @apply w-screen h-screen bg-[#212538] flex mx-auto justify-center items-center text-white font-poppins
   }
+
+  .hover-border {
+    @apply  hover:bg-slate-600/50 hover:border hover:border-slate-400 transition duration-300
+  }
+
+  .active-border {
+    @apply  bg-slate-600/50 border border-slate-400
+  }
   /* ... */
 }

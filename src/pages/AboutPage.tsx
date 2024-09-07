@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Certificate from "../components/Certificate";
 import Education from "../components/Education";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
@@ -11,6 +12,7 @@ export default function AboutPage(){
         <About/>
         <Education/>
         <Skills/>
+        <Certificate/>
       </div>
     </>
   )
