@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       title: "Klinik Smartphone",
-      description: 'Duriat Food is a website that I developed for a catering business, designed to make it easier for customers to view various menus.',
+      description: 'Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers. This landing page displays important information such as types of repair services, customer testimonials, and options to contact customer service.',
       image: 'klinik',
       linkCode: 'https://github.com/nrrarnn/duriat-food',
       linkWeb: 'https://duriat-food.netlify.app/',
@@ -62,7 +62,11 @@ const Projects: React.FC = () => {
       image: 'duriat',
       linkCode: 'https://github.com/nrrarnn/duriat-food',
       linkWeb: 'https://duriat-food.netlify.app/',
-      tech: ['React', 'Tailwind']
+      tech: [
+        'https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white', 
+        'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white'
+      ]
     },
     {
       title: "WellEat",
@@ -70,7 +74,12 @@ const Projects: React.FC = () => {
       image: 'welleat',
       linkCode: 'https://git.enigmacamp.com/enigma-camp/enigmacamp-2.0/batch-29-reactjs/fatwa-panatagama/well-eat-website',
       linkWeb: 'http://159.65.133.224/',
-      tech: ['React', 'Tailwind']
+      tech: [
+        'https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black',
+        'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white',
+        'https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white'
+      ]
     },
     {
       title: "Ryn's Recipes",
@@ -78,7 +87,11 @@ const Projects: React.FC = () => {
       image: 'recipes',
       linkCode: 'https://github.com/nrrarnn/ryn-recipes',
       linkWeb: 'https://ryn-recipes.netlify.app/',
-      tech: ['React', 'Tailwind']
+      tech: [
+        'https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black',
+        'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white'
+      ]
     },
     {
       title: 'SarahShop',
@@ -86,7 +99,11 @@ const Projects: React.FC = () => {
       image: 'shop',
       linkCode: 'https://github.com/nrrarnn/olshop-react',
       linkWeb: 'https://sarahshop.netlify.app/',
-      tech: ['React', 'Tailwind']
+      tech: [
+        'https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black',
+        'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white',
+      ]
     },
     {
       title: 'Enigma Laundry',
@@ -94,7 +111,11 @@ const Projects: React.FC = () => {
       image: 'laundry',
       linkCode: 'https://github.com/nrrarnn/challenge-react-laundry',
       linkWeb: '-',
-      tech: ['React', 'Tailwind']
+      tech: [
+        'https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black',
+        'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white',
+      ]
     },
     {
       title: 'Rin Movie',
@@ -102,7 +123,11 @@ const Projects: React.FC = () => {
       image: 'movie',
       linkCode: 'https://github.com/nrrarnn/ryn-movies-react',
       linkWeb: 'https://ar1n-movies.netlify.app',
-      tech: ['React', 'Tailwind']
+      tech: [
+        'https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black',
+        'https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white'
+      ]
     },
   ]
 

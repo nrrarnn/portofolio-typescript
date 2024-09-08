@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
         <div className="text-center">
             <h1 className="text-2xl font-semibold ">Nur Arini</h1>
             <h1 className="text-4xl font-bold" ref={textRef}></h1>
-            <p className="px-6 sm:px-52">Currently focused on Web Development, I'm also keen on exploring UX/UI Design and AI. I love learning new things and am always open to new opportunities.</p>
+            <p className="px-6 sm:px-52">I'm a Freelance Frontend Web Developer. Currently, I'm focusing on backend development, building APIs, and managing databases. I aim to create efficient, scalable, and secure systems.</p>
             <div className="flex gap-2 pt-3 justify-center">
               <button className="py-1.5 px-4 bg-pink-500 rounded-md"><a href="https://instagram.com/nrrarn_"><FaInstagram/></a></button>
               <button className="py-1.5 px-4 bg-gray-700 rounded-md"><a href="https://github.com/nrrarnn"><FaGithub /></a></button>
