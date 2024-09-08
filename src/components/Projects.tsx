@@ -48,8 +48,8 @@ const Projects: React.FC = () => {
       title: "Klinik Smartphone",
       description: 'Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers. This landing page displays important information such as types of repair services, customer testimonials, and options to contact customer service.',
       image: 'klinik',
-      linkCode: 'https://github.com/nrrarnn/duriat-food',
-      linkWeb: 'https://duriat-food.netlify.app/',
+      linkCode: 'https://github.com/nrrarnn/klinik-smartphone',
+      linkWeb: 'https://klinik-smartphone.netlify.app/',
       tech: [
         'https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white', 
         'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white',
