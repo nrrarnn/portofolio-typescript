@@ -24,17 +24,17 @@ const Projects: React.FC = () => {
       if (card) {
         gsap.fromTo(
           card,
-          { opacity: 0, y: 20 }, // Mulai dengan opacity 0 dan sedikit terangkat
+          { opacity: 0, y: 20 }, 
           {
             opacity: 1,
-            y: 0, // Kembali ke posisi semula
+            y: 0, 
             duration: 0.8,
-            delay: index * 0.2, // Tambahkan penundaan berdasarkan urutan
+            delay: index * 0.2, 
             ease: "power1.out",
             scrollTrigger: {
               trigger: card,
-              start: "top 80%", // Mulai animasi ketika bagian atas kartu mencapai 80% dari viewport
-              end: "bottom 30%", // Selesai animasi ketika bagian bawah kartu mencapai 30% dari viewport
+              start: "top 80%", 
+              end: "bottom 30%", 
               toggleActions: "play none none reverse",
             },
           }
@@ -44,6 +44,22 @@ const Projects: React.FC = () => {
   }, []);
 
   const projects: Project[] = [
+    {
+      title: "Personal Finance - SaldaQ",
+      description: 'SaldaQ is a personal finance management application designed to help users easily track expenses, income, and financial categories. The application allows users to monitor balances, group transactions by category, and manage finances effectively.',
+      image: 'personal-finance',
+      linkCode: 'https://github.com/nrrarnn/personal-finance-api',
+      linkWeb: 'https://github.com/nrrarnn/personal-finance-frontend',
+      tech: [
+          'https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white',
+          'https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white',
+          'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white',
+          'https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white',
+          'https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white',
+          'https://img.shields.io/badge/NextUI-0070F3?style=flat-square&logo=nextui&logoColor=white'
+      ]
+
+    },
     {
       title: "Klinik Smartphone",
       description: 'Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers. This landing page displays important information such as types of repair services, customer testimonials, and options to contact customer service.',

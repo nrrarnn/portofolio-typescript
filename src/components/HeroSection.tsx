@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
     });
 
     gsap.to(imgRef.current, {
-       scale: 1.1, // Membuat gambar sedikit membesar
+        scale: 1.1, 
         duration: 1.5,
         ease: "power1.inOut"
     });
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
             <h1 className="text-4xl font-bold" ref={textRef}></h1>
             <p className="px-6 sm:px-52">I'm a Freelance Frontend Web Developer. Currently, I'm focusing on backend development, building APIs, and managing databases. I aim to create efficient, scalable, and secure systems.</p>
             <div className="flex gap-2 pt-3 justify-center">
-              <button className="py-1.5 px-4 bg-pink-500 rounded-md"><a href="https://instagram.com/nrrarn_"><FaInstagram/></a></button>
+              <button className="py-1.5 px-4 bg-pink-500 rounded-md"><a href="https://instagram.com/ryn_eclffe"><FaInstagram/></a></button>
               <button className="py-1.5 px-4 bg-gray-700 rounded-md"><a href="https://github.com/nrrarnn"><FaGithub /></a></button>
               <button className="py-1.5 px-4 bg-blue-600 rounded-md"><a href="https://www.linkedin.com/in/nur-arini/"><FaLinkedin /></a></button>
             </div>
