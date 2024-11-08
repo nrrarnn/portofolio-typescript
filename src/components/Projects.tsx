@@ -45,6 +45,18 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      title: "Klinik Smartphone",
+      description: 'Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers. This landing page displays important information such as types of repair services, customer testimonials, and options to contact customer service.',
+      image: 'klinik',
+      linkCode: 'https://github.com/nrrarnn/klinik-smartphone',
+      linkWeb: 'https://klinik-smartphone.netlify.app/',
+      tech: [
+        'https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white', 
+        'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white',
+        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white',
+        ]
+    },
+    {
       title: "Personal Finance - SaldaQ",
       description: 'SaldaQ is a personal finance management application designed to help users easily track expenses, income, and financial categories. The application allows users to monitor balances, group transactions by category, and manage finances effectively.',
       image: 'personal-finance',
@@ -59,18 +71,6 @@ const Projects: React.FC = () => {
           'https://img.shields.io/badge/NextUI-0070F3?style=flat-square&logo=nextui&logoColor=white'
       ]
 
-    },
-    {
-      title: "Klinik Smartphone",
-      description: 'Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers. This landing page displays important information such as types of repair services, customer testimonials, and options to contact customer service.',
-      image: 'klinik',
-      linkCode: 'https://github.com/nrrarnn/klinik-smartphone',
-      linkWeb: 'https://klinik-smartphone.netlify.app/',
-      tech: [
-        'https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white', 
-        'https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white',
-        'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white',
-        ]
     },
     {
       title: "Duriat-Food",
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
       title: "WellEat",
       description: 'WellEat is a healthy food recipe platform that helps users discover, save their favorite food recipes.',
       image: 'welleat',
-      linkCode: 'https://git.enigmacamp.com/enigma-camp/enigmacamp-2.0/batch-29-reactjs/fatwa-panatagama/well-eat-website',
+      linkCode: 'https://github.com/nrrarnn/welleat',
       linkWeb: 'http://159.65.133.224/',
       tech: [
         'https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black',
