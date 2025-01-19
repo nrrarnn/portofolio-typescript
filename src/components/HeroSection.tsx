@@ -14,9 +14,9 @@ const HeroSection: React.FC = () => {
   useEffect(() => {
     if (textRef.current && imgRef.current) {
     gsap.to(textRef.current, {
-      duration: 3,
+      duration: 5,
       text: {
-        value: "Web Developer",
+        value: "Front End Web Developer",
         delimiter: ""
       }
     });
@@ -28,25 +28,40 @@ const HeroSection: React.FC = () => {
     });
   }
   }, []);
-  return(
+  return (
     <>
       <div className="section pt-44 justify-center items-center" ref={containerRef}>
         <div>
           <img ref={imgRef} src="./img/myfoto.jpg" alt="My Foto" className="w-[150px] h-[150px] object-cover rounded-full border border-solid border-blue-400" />
         </div>
         <div className="text-center">
-            <h1 className="text-2xl font-semibold ">Nur Arini</h1>
-            <h1 className="text-4xl font-bold" ref={textRef}></h1>
-            <p className="px-6 sm:px-52">I'm a Freelance Frontend Web Developer. Currently, I'm focusing on backend development, building APIs, and managing databases. I aim to create efficient, scalable, and secure systems.</p>
-            <div className="flex gap-2 pt-3 justify-center">
-              <button className="py-1.5 px-4 bg-pink-500 rounded-md"><a href="https://instagram.com/ryn_code"><FaInstagram/></a></button>
-              <button className="py-1.5 px-4 bg-gray-700 rounded-md"><a href="https://github.com/nrrarnn"><FaGithub /></a></button>
-              <button className="py-1.5 px-4 bg-blue-600 rounded-md"><a href="https://www.linkedin.com/in/nur-arini/"><FaLinkedin /></a></button>
-            </div>
+          <h1 className="text-2xl font-semibold ">Nur Arini</h1>
+          <h1 className="text-4xl font-bold" ref={textRef}></h1>
+          <p className="px-6 sm:px-52">
+            'm a Frontend Web Developer with occasional fullstack responsibilities. My expertise includes designing responsive interfaces, building backend systems, and ensuring seamless integration between frontend and backend
+            technologies.
+          </p>
+          <div className="flex gap-2 pt-3 justify-center">
+            <button className="py-1.5 px-4 bg-pink-500 rounded-md">
+              <a href="https://instagram.com/ryn_code">
+                <FaInstagram />
+              </a>
+            </button>
+            <button className="py-1.5 px-4 bg-gray-700 rounded-md">
+              <a href="https://github.com/nrrarnn">
+                <FaGithub />
+              </a>
+            </button>
+            <button className="py-1.5 px-4 bg-blue-600 rounded-md">
+              <a href="https://www.linkedin.com/in/nur-arini/">
+                <FaLinkedin />
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default HeroSection;
