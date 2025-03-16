@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
     gsap.to(textRef.current, {
       duration: 5,
       text: {
-        value: "Front End Web Developer",
+        value: "Full Stack Web Developer",
         delimiter: ""
       }
     });
@@ -37,10 +37,7 @@ const HeroSection: React.FC = () => {
         <div className="text-center">
           <h1 className="text-2xl font-semibold ">Nur Arini</h1>
           <h1 className="text-4xl font-bold" ref={textRef}></h1>
-          <p className="px-6 sm:px-52">
-            'm a Frontend Web Developer with occasional fullstack responsibilities. My expertise includes designing responsive interfaces, building backend systems, and ensuring seamless integration between frontend and backend
-            technologies.
-          </p>
+          <p className="px-6 sm:px-52">I'm a Fullstack Web Developer with expertise in designing responsive interfaces, building backend systems, and ensuring seamless integration between frontend and backend technologies.</p>
           <div className="flex gap-2 pt-3 justify-center">
             <button className="py-1.5 px-4 bg-pink-500 rounded-md">
               <a href="https://instagram.com/ryn_code">
