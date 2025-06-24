@@ -1,5 +1,5 @@
 export default function Skills(){
-  const logos: string[] = ['html-5', 'css', 'js', 'bootstrap', 'tailwindcss', 'react', 'nextjs', 'node', 'typescript', 'express', 'mongo', 'python', 'php', 'laravel', 'mysql', 'figma', 'postman']
+  const logos: string[] = ['html-5', 'css', 'js', 'bootstrap', 'tailwindcss', 'react', 'nextjs', 'node', 'typescript', 'express', 'mongo', 'python', 'php', 'laravel', 'mysql', 'figma', 'postman', 'docker']
   return(
     <>
       <div className="section section-2 pt-10 pb-8">

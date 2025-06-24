@@ -8,23 +8,15 @@ gsap.registerPlugin(TextPlugin);
 const HeroSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
-  const imgRef = useRef<HTMLImageElement>(null);
-
 
   useEffect(() => {
-    if (textRef.current && imgRef.current) {
+    if (textRef.current ) {
     gsap.to(textRef.current, {
       duration: 5,
       text: {
-        value: "Full Stack Web Developer",
+        value: "Full Stack Developer",
         delimiter: ""
       }
-    });
-
-    gsap.to(imgRef.current, {
-        scale: 1.1, 
-        duration: 1.5,
-        ease: "power1.inOut"
     });
   }
   }, []);
@@ -32,12 +24,15 @@ const HeroSection: React.FC = () => {
     <>
       <div className="section pt-44 justify-center items-center" ref={containerRef}>
         <div>
-          <img ref={imgRef} src="./img/myfoto.jpg" alt="My Foto" className="w-[150px] h-[150px] object-cover rounded-full border border-solid border-blue-400" />
+          <img src="./img/foto2.jpg" alt="My Foto" className="w-[150px] h-[150px] object-cover rounded-full border border-solid border-blue-400" />
         </div>
         <div className="text-center">
-          <h1 className="text-2xl font-semibold ">Nur Arini</h1>
+          <h1 className="text-2xl font-semibold text-blue-300  ">Hi, I'm Arin</h1>
           <h1 className="text-4xl font-bold" ref={textRef}></h1>
-          <p className="px-6 sm:px-52">I'm a Fullstack Web Developer with expertise in designing responsive interfaces, building backend systems, and ensuring seamless integration between frontend and backend technologies.</p>
+          <p className="px-6 sm:px-52 pt-2">
+            A developer with web and mobile expertise, ready to help your business create a consistent digital experience across all platforms, ensuring seamless performance, intuitive interfaces, and scalable architecture tailored to your
+            business goals.
+          </p>
           <div className="flex gap-2 pt-3 justify-center">
             <button className="py-1.5 px-4 bg-pink-500 rounded-md">
               <a href="https://instagram.com/ryn_code">

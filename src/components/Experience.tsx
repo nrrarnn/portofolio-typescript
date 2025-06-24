@@ -6,7 +6,7 @@ export default function Experience() {
         <div className="w-full border border-slate-200 border-separate p-5 rounded-2xl">
           <p className="text-2xl uppercase">SKYE DIGIPRENEUR SCHOOL</p>
           <p>FullStack Developer</p>
-          <p>Desember 2024 - Sekarang</p>
+          <p>Desember 2024 - Present</p>
         </div>
       </div>
     </>

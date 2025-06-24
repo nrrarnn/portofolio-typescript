@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <header className="flex justify-center font-poppins z-[9999]" ref={navbarRef}>
-        <nav className="fixed mt-5 top-0 px-4 py-3 bg-slate-700/30 text-white flex justify-center items-center shadow-lg z-50 max-w-[330px] w-full rounded-full border border-slate-500">
+        <nav className="fixed mt-5 top-0 px-6 py-3 bg-slate-700/30 text-white flex justify-center items-center shadow-lg z-50 max-w-[340px] w-full rounded-full border border-slate-500">
           <div className="flex gap-2 list-none font-normal text-sm">
             <Link to={'/'} className={`px-3 py-1 rounded-full ${isActive('/') ? "active-border" : "hover-border"}`}>Home</Link>
             <Link to={'/about'} className={`px-3 py-1 rounded-full ${isActive('/about') ? "active-border" : "hover-border"}`}>About</Link>
